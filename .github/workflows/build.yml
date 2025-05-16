@@ -253,7 +253,7 @@ jobs:
           tag=${{ needs.set-vars.outputs.tag_name }}
           
           # Note: release is created as draft for manual validation
-          gh release create "$tag" -t "GUID $tag" -n "Static builds for GUID $tag" --draft
+          gh release create "$tag" -t "guid $tag" -n "Static builds for guid $tag" --draft
 
       - name: Upload assets
         run: |
